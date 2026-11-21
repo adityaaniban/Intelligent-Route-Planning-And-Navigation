@@ -33,4 +33,5 @@ def compare_algorithms(graph, start, goal, coordinates):
             "explored_order": explored_order,
             "execution_time": elapsed,
         }
+    print(results)
     return results
