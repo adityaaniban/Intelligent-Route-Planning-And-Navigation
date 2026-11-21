@@ -82,7 +82,18 @@ st.write(
     "Select your starting city and destination. "
     "All four search algorithms will run automatically."
 )
+# Display the road network immediately
 
+st.subheader("Road Network Map")
+
+fig = create_map_figure(
+    working_graph,
+    blocked_roads=blocked_roads
+)
+
+st.pyplot(fig, use_container_width=True)
+
+plt.close(fig)
 
 # ---------------- SEARCH ----------------
 
